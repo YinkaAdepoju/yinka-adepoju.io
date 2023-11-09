@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #2D2D2D, #FF6868);
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif; /* Updated font family */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.link-pill {
+    background-color: #281F1F;
+    border-radius: 50px;
+    display: inline-flex;
+    padding: 10px 20px;
+    gap: 10px;
+    flex-wrap: wrap; /* allows links to wrap in smaller screens */
+    justify-content: center; /* centers links when wrapped */
+}
+
+.link-pill a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+.link-pill a:hover {
+    background-color: #3A2C2C;
+    border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        font-size: 12px;
+    }
+    .link-pill a {
+        margin-bottom: 5px; /* adds spacing between links when wrapped */
+    }
+}
